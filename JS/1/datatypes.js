@@ -21,5 +21,22 @@ let state;
 
 
 //object
-console.log(typeof(null));//object
-console.log(typeof(undefined));//undefined
+//console.log(typeof(null));//object
+//console.log(typeof(undefined));//undefined
+// ***************************
+const id = Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId);
+
+//Object
+const heros=["Superman","Batman","Shaktiman","Krish"];
+let myObj={
+    name:"Harsh",
+    age:20,
+}
+console.log(typeof myObj);
+const myfunction=function(){
+    console.log("Hello");
+}
+console.log(typeof myfunction);
