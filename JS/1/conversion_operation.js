@@ -15,7 +15,7 @@ let isLoggedIn =10
 let booleanintoString=String(isLoggedIn)
 
 //console.log(typeof booleanintoString)
-//console.log( booleanintoString)
+console.log( booleanintoString)
 
 //*****************OPERATIONS********************
 let value = 3;
