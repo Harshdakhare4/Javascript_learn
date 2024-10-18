@@ -1,1 +1,2 @@
-# Javascript_learn
+# Javascript_learn 
+# Basics for JS
