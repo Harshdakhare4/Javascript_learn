@@ -4,7 +4,7 @@ const tinderUser ={} //Non singleton Object
 tinderUser.id = "123abc"
 tinderUser.name= "Sam"
 tinderUser.isLoggedIn= false
-// console.log(tinderUser);
+console.log(tinderUser);
 
 const regularUser = {
     email:"hmdakhare@gmail.com",
