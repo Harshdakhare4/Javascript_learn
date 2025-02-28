@@ -5,12 +5,12 @@ if (userEmail) {
 } else {
     console.log("Don't have user email");
 }
-
+//-----------------Interview bits------------------
 // falsy values
 //---->
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
-//truthy values
+//truthy values  [string  chya andar jar '0' kiwa 'false' asel tar te truthy aste ]
 // "0", 'false', " ", [], {}, function(){}
 
 // if (userEmail.length === 0) {
@@ -35,7 +35,7 @@ val1 = null ?? 10 ?? 20
 
 console.log(val1);
 
-// Terniary Operator
+// Ternary Operator
 
 // condition ? true : false
 
