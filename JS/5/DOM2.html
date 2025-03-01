@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: rgb(32, 32, 32);color: rgb(255, 255, 255);">
+    <ul class="language">
+        <li>Javascript</li>
+        <li>Java</li>
+        <li>C++</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML= `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python");
+    addLanguage("typescript");
+    //----------------------OPTIMISED APPROACH------------------
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))            
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("Ruby")
+
+    //Edit
+   const secondLang = document.querySelector("li:nth-child(2)")
+   //secondLang.innerHTML="MOJO";
+   const newLi = document.createElement('li')
+   newLi.textContent = "Mojo"
+   secondLang.replaceWith(newLi)
+
+   //edit
+   const firstLang = document.querySelector("li:nth-child(1)")
+    firstLang.outerHTML = '<li>GO</li>'
+   //remove
+   const lastLang = document.querySelector("li:last-child")
+   lastLang.remove();
+</script>
+</html>
